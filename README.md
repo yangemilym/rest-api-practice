@@ -4,7 +4,7 @@ We need to create a RESTful API for a school system. There will be teachers, stu
 
 You will be using MongoDB and the Mongoose ORM for data persistence, and express with NodeJS to create an http web server.
 
-First, Install [MongoDB](https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-os-x/) Once installed, run the command `mongod` to start a local mongoDB server.
+First, Install [MongoDB](https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-os-x/). Once installed, run the command `mongod` to start a local mongoDB server.
 
 ## General Advice
 
@@ -26,6 +26,14 @@ Create a RESTful API that adheres to the below documentation:
 ```plaintext
 {GET} /api/teachers
 Lists information for every teacher
+  Response
+    success : BOOLEAN
+    err     : STRING
+    teachers: ARRAY<{
+      id   : INTEGER
+      name : STRING
+      email: STRING
+    }>
 ```
 
 ```plaintext
