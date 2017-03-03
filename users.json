@@ -1,0 +1,7 @@
+// var users= JSON,parse(require('users.json'));
+
+//load in your mongoose models
+
+// make sure your connected to mongooseiterate over users
+
+// for each user creat an entry using a mongoose model function
